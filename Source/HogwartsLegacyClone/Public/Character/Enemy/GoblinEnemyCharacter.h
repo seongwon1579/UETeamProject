@@ -23,4 +23,7 @@ public:
 	TObjectPtr<UDA_MeleeEnemyConfig> GoblinConfig;
 	
 	virtual UDA_EnemyConfigBase* GetEnemyConfig() const override;
+	
+protected:
+	virtual void BeginPlay() override;
 };
