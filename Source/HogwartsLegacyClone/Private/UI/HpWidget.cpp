@@ -49,6 +49,5 @@ void UHpWidget::UpdateBar()
 		return;
 	}
 	
-	CurrentPercentage = FMath::FInterpTo(CurrentPercentage, TargetPercentage, TimerRate, InterpSpeed);
-	HPBar->SetPercent(CurrentPercentage);
+	HPBar->SetPercent(TargetPercentage);
 }
